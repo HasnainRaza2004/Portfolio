@@ -1,0 +1,312 @@
+
+*,
+*:after,
+*:before{
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+    transition: background-color 0.5s ease-in-out;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--primary-color) !important;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* ======================Variable Define========================== */
+:root{
+    --primary-color:#7510F7;
+    /* --secondary-color:#77001a; */
+    /* --third-color:#141c3a; */
+    --text-gray:#999;
+    --text-color:#141c3a;
+    --white-color:#ffffff;
+    --black-color:#000000;
+    --secondary-font:'Mochiy Pop P One', 'sans-serif';
+    --primary-font:'Roboto', 'sans-serif';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 100%;
+    font-weight: 200;
+}
+
+/* =======================Custom Scroll Bar========================== */
+::-webkit-scrollbar {
+    width: 0.625rem;
+}   
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+
+
+/* =====================Custom Css Design================= */
+h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+h4{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+h5{
+    font-size: 0.3725rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+p{
+    font-size: 1.1rem;
+    font-weight: 300; 
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.main-btn{
+    display: inline-block;
+    padding: 0.625rem 1rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.8725rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s ;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+.white-btn{
+    padding: 0.625rem 1rem;
+    line-height: 25px;
+    background-color: var(--white-color);
+    border: 0.8rem solid var(--white-color);
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s ;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+.white-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.wrapper{
+    padding-top: 8.25rem;
+    padding-bottom: 7rem;
+}
+.text-content{
+    width: 70%;
+    margin: auto;
+}
+/* ================Navbar Design========================== */
+.Main-Nav{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.HRlogo{
+    margin-left: 18rem;
+
+}
+.HRlogo img{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1.5rem;
+}
+.Nav-links{
+    margin-left: 70rem;
+    margin-top: 3rem;
+
+}
+.Nav-links a{
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    word-spacing:2px;
+    font-weight: bolder;
+    padding: 0.70rem 1rem 0.70rem 1rem  ;
+    background-color: white;
+    color: #7510F7;
+    text-decoration: none;
+    border: 2px solid #7510F7;
+    justify-content: center;
+    border-radius: 40px;
+}
+.Nav-links a:hover{
+    cursor: pointer;
+    font-size: 1.2rem;
+    word-spacing:2px;
+    font-weight: bolder;
+    padding: 0.70rem 1rem 0.70rem 1rem;
+    color: #ffffff;
+    background-color: #d6b7ff;
+    text-decoration: none;
+    border: 2px solid #6d00fc;
+    justify-content: center;
+    border-radius: 40px;
+    
+}
+
+/* =======================Change Nvabar Styling  on Scroll=============== */
+/* .navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.09) ;
+    transition: all .15s ease-in-out 0s;
+} */
+
+
+
+
+/* =======================TOP INTRO DESIGN================== */
+.TopIntroMain{
+    margin-top: 8rem;
+text-align: center;
+}
+.Profession{
+    font-family: var(--secondary-color);
+font-size: 2.8rem;
+}
+.TopImages{
+    display: flex;
+    flex-direction: column;
+}
+.Profile-Picture img{
+    margin-top: 4rem;
+    width: 15rem;
+    height: 15rem;
+}
+.TopIntroTempelate img{
+    margin-top: -10rem;
+    width: 50rem;
+    height: 50rem;
+}
+
+
+
+/* ============================Main Intorduction============== */
+.MainIntroText{
+    background-color: var(--primary-color);
+    color: white;
+    width: auto;
+    height: 40.5rem;
+    text-align: center;
+    margin-top: -15.1rem;
+}
+.Myname{
+    font-size: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+/* .MyDescription{
+
+} */
+
+/* ==================Skills section design============== */
+.SkillsDivMain{
+    width: auto;
+    height: auto;
+    align-items: center;
+    padding-top: 10rem;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+}
+.SkillsSubDiv{
+    background-color: #ffffff;
+    width: 90rem;
+    height: 90rem;
+    border-radius: 15px;
+    display: flex;
+flex-direction: row;
+}
+.FrontendSkill{
+    color: #000000;
+    width: 30rem;
+}
+.BackendSkill{
+    width: 30rem;
+    color: #000000;
+}
+.GraphicSkill{
+    width: 30rem;
+    color: #000000;
+}
+.FrontendLogo img{
+    margin-top: 3rem;
+    width: 8rem;
+    height: 8rem;
+}
+.BackendLogo img{
+    margin-top: 3rem;
+    width: 8rem;
+    height: 8rem;
+}
+.GraphicLogo img{
+    margin-top: 3rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+
+
+/* ==================SODA TYPE SECTION DESIGN=============== */
+
+
+
+/* ==================Explore Flavours SECTION DESIGN=============== */
+
+
+
+/* ==================FOOTER SECTION DESIGN=============== */
+
