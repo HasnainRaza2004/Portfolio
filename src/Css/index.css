@@ -1,0 +1,904 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+    transition: background-color 0.5s ease-in-out;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================Variable Define========================== */
+:root {
+    --primary-color: #6E07F3;
+    /* --secondary-color:#77001a; */
+    /* --third-color:#141c3a; */
+    --text-gray: rgb(47, 45, 45);
+    --text-color: #141c3a;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --secondary-font: Arial, Helvetica, sans-serif;
+    --primary-font: 'Roboto', 'sans-serif';
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-size: 100%;
+    font-weight: 200;
+}
+
+/* =======================Custom Scroll Bar========================== */
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+
+/* =====================Custom Css Design================= */
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    font-size: 0.3725rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 0.625rem 1rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.8725rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.white-btn {
+    padding: 0.625rem 1rem;
+    line-height: 25px;
+    background-color: var(--white-color);
+    border: 0.8rem solid var(--white-color);
+    color: var(--text-color);
+    font-size: 0.9375rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.white-btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.wrapper {
+    padding-top: 8.25rem;
+    padding-bottom: 7rem;
+}
+
+.text-content {
+    width: 70%;
+    margin: auto;
+}
+
+/* ================Navbar Design========================== */
+.Main-Nav {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.HRlogo {
+    margin-left: 18rem;
+
+}
+
+.HRlogo img {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1.5rem;
+}
+
+.Nav-links {
+    margin-left: 70rem;
+    margin-top: 3rem;
+}
+.Nav-links {
+    margin-left: 65rem;
+    margin-top: 3rem;
+}
+.Nav-links2 {
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+
+.Nav-links a {
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    word-spacing: 2px;
+    font-weight: bolder;
+    padding: 0.70rem 1rem 0.70rem 1rem;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 2.5px solid var(--primary-color);
+    justify-content: center;
+    border-radius: 40px;
+}
+.Nav-links2 a {
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    word-spacing: 2px;
+    font-weight: bolder;
+    padding: 0.70rem 1rem 0.70rem 1rem;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 2.5px solid var(--primary-color);
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.Nav-links a:hover {
+    cursor: pointer;
+    font-size: 1.2rem;
+    word-spacing: 2px;
+    font-weight: bolder;
+    padding: 0.70rem 1rem 0.70rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 40px;
+}
+.Nav-links2 a:hover {
+    cursor: pointer;
+    font-size: 1.2rem;
+    word-spacing: 2px;
+    font-weight: bolder;
+    padding: 0.70rem 1rem 0.70rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+/* =======================Change Nvabar Styling  on Scroll=============== */
+.navigation-wrap.scroll-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+    transition: all .15s ease-in-out 0s;
+}
+
+
+
+
+/* =======================TOP INTRO DESIGN================== */
+.TopIntroMain {
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.Profession {
+    font-family: var(--secondary-color);
+    font-size: 2.8rem;
+}
+
+.TopImages {
+    display: flex;
+    flex-direction: column;
+}
+
+.Profile-Picture {
+align-items: center;
+}
+.Profile-Picture img {
+    margin-top: 4rem;
+    width: 12rem;
+    height: 15rem;
+}
+
+.TopIntroTempelate{
+    align-items: center;
+}
+.TopIntroTempelate img {
+    margin-top: -10rem;
+    width: 50rem;
+    height: 50rem;
+}
+
+
+
+/* ============================Main Intorduction============== */
+.MainIntroText {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    width: auto;
+    height: 40.5rem;
+    text-align: center;
+    margin-top: -15.1rem;
+}
+
+.Myname {
+    font-size: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+
+/* .MyDescription{
+    
+} */
+
+/* ==================Skills section design============== */
+.SkillsDivMain {
+    width: auto;
+    height: auto;
+    align-items: center;
+    padding-top: 10rem;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.SkillsSubDiv {
+    background-color: var(--white-color);
+    width: 90rem;
+    height: 70rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20rem;
+}
+
+.FrontendSkill {
+    color: var(--black-color);
+    width: 30rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.BackendSkill {
+    width: 30rem;
+    color: var(--black-color);
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.GraphicSkill {
+    width: 30rem;
+    color: var(--black-color);
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.FrontendLogo img {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: auto;
+    height: 4rem;
+}
+
+.BackendLogo img {
+    margin-top: 3.2rem;
+    margin-bottom: 2rem;
+    width: auto;
+    height: 4rem;
+}
+
+.GraphicLogo img {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: auto;
+    height: 4rem;
+}
+
+.SkillDescription {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-top: 1rem;
+}
+
+.AdvertiseLine {
+    margin-top: 5rem;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.Experties {
+    color: var(--text-gray);
+    font-size: 1.7rem;
+}
+
+
+/* ==================RECENT WORK SECTION DESIGN=============== */
+.RecnetWorkMain {
+    margin-top: 70rem;
+    text-align: center;
+}
+
+.RecnetWorktext {
+    font-size: 2.7rem;
+    font-weight: 650;
+}
+
+.EmailMe {
+    margin-top: 1.5rem;
+}
+
+.RecentWork {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 1.5rem;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.WorkMain1 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 5%;
+    width: 30rem;
+    height: 20rem;
+    border: 2px solid, var(--white-color);
+    border-radius: 20px;
+    background-image: url(../Designs\,Logos\ &\ Images/SodaStop.png);
+    background-size: cover;
+}
+
+.SodaShopbtn {
+    margin-top: 16rem;
+}
+
+.SodaShopbtn a {
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    word-spacing: 2px;
+    font-weight: bolder;
+    padding: 0.70rem 1rem 0.70rem 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.ForwardArrow {
+    font-size: 1.2rem;
+    vertical-align: -0.210em;
+    ;
+}
+
+.SodaShopbtn a:hover {
+    cursor: pointer;
+    font-size: 1.2rem;
+    word-spacing: 2px;
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 0.70rem 1rem 0.70rem 1rem;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    justify-content: center;
+    border-radius: 40px;
+}
+
+
+.WorkMain2 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-right: 5%;
+    width: 30rem;
+    height: 20rem;
+    border: 2px solid var(--white-color);
+    border-radius: 20px;
+    background-image: url(https://mattfarley.ca/img/projects/wfdesignbuild.png);
+}
+
+.WorkMain3 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 30rem;
+    height: 20rem;
+    border: 2px solid var(--white-color);
+    border-radius: 20px;
+    background-image: url(https://mattfarley.ca/img/projects/glcsolutions.png);
+}
+
+.GitBtn {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.GitBtn a {
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    word-spacing: 2px;
+    font-weight: bolder;
+    padding: 1rem 9rem 1rem 9rem;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 2.5px solid var(--primary-color);
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.githubLogo {
+    margin-right: 0.50rem;
+    font-size: 1.5rem;
+    vertical-align: -0.170em;
+    ;
+}
+
+.GitBtn a:hover {
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    word-spacing: 2px;
+    font-weight: bolder;
+    padding: 1rem 9rem 1rem 9rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+/* ==================FOOTER SECTION DESIGN=============== */
+.FooterLabelMain {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-bottom: -7rem;
+    justify-content: center;
+}
+
+.FooterLabel {
+    border-radius: 10px;
+    width: 90rem;
+    height: 13rem;
+    background-color: #141c3a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.FooterLabelText {
+    color: var(--white-color);
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.StartAproject {
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.Letsdothisbtn a {
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    word-spacing: 2px;
+    font-weight: 650;
+    padding: 1rem 5rem 1rem 5rem;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--white-color);
+    text-decoration: none;
+    border: 2.8px solid #5BE9B9;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.HandLogo {
+    margin-right: 0.50rem;
+    font-size: 2rem;
+    vertical-align: -0.200em;
+    ;
+}
+
+.Letsdothisbtn a:hover {
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    word-spacing: 2px;
+    font-weight: 650;
+    padding: 1rem 5rem 1rem 5rem;
+    background-color: #5BE9B9;
+    color: #141c3a;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.FooterMain {
+    background-color: var(--primary-color);
+    width: auto;
+    height: 48rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.FooterInfo {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.IconsDiv {
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.IconsDiv a {
+    color: var(--white-color);
+}
+
+.IconsDiv a:hover {
+    color: var(--primary-color);
+}
+
+.HandlesDiv {
+    border: 2.3px solid var(--white-color);
+    border-radius: 100%;
+    padding: 10px 15px 10px 15px;
+    font-size: 1.5rem;
+}
+
+.HandlesDiv:hover {
+    border-radius: 100%;
+    padding: 10px 15px 10px 15px;
+    font-size: 1.5rem;
+    background-color: var(--white-color);
+}
+
+.FooterTextLine {
+    color: #ffffffac;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+/* ==================SAY HELLO SECTION DESIGN=============== */
+.BackIcon{
+    margin-left: 75rem;
+    margin-top:2rem;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.sayHelloMain{
+    margin-top: 2rem;
+    text-align: center;
+}
+.thankingLine{
+    font-size: 3.5rem;
+    font-weight: 350;
+    margin-top:2rem;
+}
+.inputsDiv{
+    margin-top:4rem;
+}
+.Name{
+    display: inline-block;
+}
+.Name input{
+    line-height: 4rem;
+    width: 20rem;
+    font-size: 1.4rem;
+    background-color: rgb(223, 223, 223);
+    border: none;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+.NameLabel{
+    display: block;
+    margin-left:-16rem;
+    margin-bottom:1rem;
+    font-size: 1.5rem;
+}
+.Email{
+    display: inline-block;
+    margin-left: 2rem;
+}
+.Email input{
+    font-size: 1.4rem;
+    line-height: 4rem;
+    width: 20rem;
+    border: none;
+    background-color: rgb(223, 223, 223);
+    padding-left: 10px;
+    padding-top: 2px;
+}
+.EmailLabel{
+    display: block;
+    margin-left:-16rem;
+    margin-bottom:1rem;
+    font-size: 1.5rem;
+}
+.Message{
+    display:block;
+    margin-top:1rem;
+    margin-bottom:5rem;
+}
+.Message textarea{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    width: 42rem;
+    border: none;
+    background-color: rgb(223, 223, 223);
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.MessageLabel{
+    display: block;
+    margin-left:-36rem;
+    margin-bottom:1rem;
+    font-size: 1.5rem;
+}
+.SayHelloSubmitBtn{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+.SayHelloSubmitBtn a{
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    word-spacing: 2px;
+    font-weight: bolder;
+    padding: 1rem 4rem 1rem 4rem;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 2.5px solid var(--primary-color);
+    justify-content: center;
+    border-radius: 40px;
+}
+.SayHelloSubmitBtn a:hover{
+    cursor: pointer;
+    font-size: 1.4rem;
+    word-spacing: 2px;
+    font-weight: bolder;
+    padding: 1rem 4rem 1rem 4rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 40px;
+}
+/* ==================START A PROJECT SECTION DESIGN=============== */
+.BackIcon{
+    margin-left: 75rem;
+    margin-top:2rem;
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.startAProjectMain{
+    margin-top: 2rem;
+    text-align: center;
+}
+.ConveniencingLine{
+    font-size: 3.5rem;
+    font-weight: 350;
+    margin-top:2rem;
+}
+.inputsDiv{
+    margin-top:4rem;
+}
+.Name{
+    display: inline-block;
+}
+.Name input{
+    line-height: 4rem;
+    width: 20rem;
+    font-size: 1.4rem;
+    background-color: rgb(223, 223, 223);
+    border: none;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+.NameLabel{
+    display: block;
+    margin-left:-16rem;
+    margin-bottom:1rem;
+    font-size: 1.5rem;
+}
+.Email{
+    display: inline-block;
+    margin-left: 2rem;
+}
+.Email input{
+    font-size: 1.4rem;
+    line-height: 4rem;
+    width: 20rem;
+    border: none;
+    background-color: rgb(223, 223, 223);
+    padding-left: 10px;
+    padding-top: 2px;
+}
+.EmailLabel{
+    display: block;
+    margin-left:-16rem;
+    margin-bottom:1rem;
+    font-size: 1.5rem;
+}
+.AdditionalInformation{
+    display:block;
+    margin-top:1rem;
+    margin-bottom:5rem;
+}
+.AdditionalInformation textarea{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    width: 42rem;
+    border: none;
+    background-color: rgb(223, 223, 223);
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.AdditionalInformationLabel{
+    display: block;
+    margin-left:-30rem;
+    margin-bottom:1rem;
+    font-size: 1.5rem;
+}
+.SayHelloSubmitBtn{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+.SayHelloSubmitBtn a{
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    word-spacing: 2px;
+    font-weight: bolder;
+    padding: 1rem 4rem 1rem 4rem;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 2.5px solid var(--primary-color);
+    justify-content: center;
+    border-radius: 40px;
+}
+.SayHelloSubmitBtn a:hover{
+    cursor: pointer;
+    font-size: 1.4rem;
+    word-spacing: 2px;
+    font-weight: bolder;
+    padding: 1rem 4rem 1rem 4rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 40px;
+}
+.ProjectType{
+    display: inline-block;
+}
+.ProjectTypeLabel{
+    display: block;
+    margin-left:-11rem;
+    margin-bottom:1rem;
+    margin-top:1rem;
+    font-size: 1.5rem;
+}
+.ProjectType select{
+    font-size: 1.4rem;
+    line-height: 4rem;
+    width: 20rem;
+    border: none;
+    background-color: rgb(223, 223, 223);
+    padding-left: 10px;
+    padding-top: 2px;
+}
+.Budget{
+    display: inline-block;
+    margin-left: 2rem;
+}
+.Budget input{
+    font-size: 1.4rem;
+    line-height: 4rem;
+    width: 20rem;
+    border: none;
+    background-color: rgb(223, 223, 223);
+    padding-left: 10px;
+    padding-top: 2px;
+}
+.BudgetLabel{
+    display: block;
+    margin-left:-16rem;
+    margin-bottom:1rem;
+    font-size: 1.5rem;
+}
