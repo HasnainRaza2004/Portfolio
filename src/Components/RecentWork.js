@@ -13,7 +13,7 @@ const RecentWork = () => {
                         <p className='EmailMe'>Here are a few past design projects I've worked on. Want to see more?<a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRQMTzXLPKfshlMrKWMKXFKssfkwgcKNMDSXTTzqHgRsWCmsHZmPMLcNsmxqMMGBQMjMpl" onClick={(e)=>openUrl(e)}>Email me</a>.</p>
                         <div className='RecentWork'>
                                 <div className='WorkMain1'>
-                                        <div className='SodaShopbtn'><a href='https://www.sodastop.online/'>Visit Website<span className='ForwardArrow'><IoIosArrowForward /></span>      </a>
+                                        <div className='SodaShopbtn'><a href='https://sodastop-lmdz95yfz-muhammad-hasnain-razas-projects.vercel.app/'>Visit Website<span className='ForwardArrow'><IoIosArrowForward /></span>      </a>
                                         </div>
                                 </div>
                                 <div className='WorkMain2'></div>
